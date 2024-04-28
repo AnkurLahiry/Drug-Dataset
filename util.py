@@ -9,7 +9,7 @@ def show_train_validation_loss(train_losses, valid_losses, filename):
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
     plt.legend()
-    plt.savefig(filename)
+    plt.savefig("images/" + filename)
 
 
 
@@ -19,4 +19,4 @@ def show_confusion_matrix(cm, y_true, y_pred, filename):
     plt.title('Confusion Matrix')
     plt.xlabel('True Labels')
     plt.ylabel('Predicted Labels')
-    plt.savefig(filename)
+    plt.savefig("images" + filename)
